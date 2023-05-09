@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="teclado">
+    <div class="linha1">
+        <button class="padrao" style="height: 60px;" id="esc">esc</button>
+    </div>
+    <div class="linha2">
+        <button class="padrao" id="">~<br>`</button>
+        <button class="padrao" id="">1<br>!</button>
+        <button class="padrao" id="">2<br>@</button>
+        <button class="padrao" id="">3<br>#</button>
+        <button class="padrao" id="">4<br>$</button>
+        <button class="padrao" id="">5<br>%</button>
+        <button class="padrao" id="">6<br>¨</button>
+        <button class="padrao" id="">7<br>&</button>
+        <button class="padrao" id="">8<br>*</button>
+        <button class="padrao" id="">9<br>(</button>
+        <button class="padrao" id="">0<br>)</button>
+        <button class="padrao" id="">-<br>_</button>
+        <button class="padrao" id="">+<br>=</button>
+        <button class="padrao" id="">backspace</button>
+    </div>
+    <div class="linha2">
+        <button class="padrao">tab</button>
+        <button class="padrao">Q</button>
+        <button class="padrao">W</button>
+        <button class="padrao">E</button>
+        <button class="padrao">R</button>
+        <button class="padrao">T</button>
+        <button class="padrao">Y</button>
+        <button class="padrao">U</button>
+        <button class="padrao">I</button>
+        <button class="padrao">O</button>
+        <button class="padrao">P</button>
+        <button class="padrao">{<br>[</button>
+        <button class="padrao">}<br>]</button>
+        <button class="padrao">|<br>\</button>
+    </div>
+    <div class="linha2">
+        <button class="padrao" style="width: 120px;">caps</button>
+        <button class="padrao">A</button>
+        <button class="padrao">S</button>
+        <button class="padrao">D</button>
+        <button class="padrao">F</button>
+        <button class="padrao">G</button>
+        <button class="padrao">H</button>
+        <button class="padrao">J</button>
+        <button class="padrao">K</button>
+        <button class="padrao">L</button>
+        <button class="padrao">:<br>;</button>
+        <button class="padrao">"<br>'</button>
+        <button class="padrao" style="width: 170px;">enter</button>
+    </div>
+    <div class="linha2">
+        <button class="padrao" style="width: 190px;">shift</button>
+        <button class="padrao">Z</button>
+        <button class="padrao">X</button>
+        <button class="padrao">C</button>
+        <button class="padrao">V</button>
+        <button class="padrao">B</button>
+        <button class="padrao">N</button>
+        <button class="padrao">M</button>
+        <button class="padrao"><<br>,</button>
+        <button class="padrao">><br>.</button>
+        <button class="padrao">?<br>/</button>
+        <button class="padrao" style="width: 190px;">shift</button>
+    </div>
+    <div class="linha3">
+        <button class="padrao" style="width: 180px;">ctrl</button>
+        <button class="padrao" style="width: 180px;">alt</button>
+        <button class="padrao" style="width: 500px;"></button>
+        <button class="padrao">alt</button>
+        <button class="padrao">ctrl</button>
+        <button class="padrao"><</button>
+        <div class="setas">
+            <button class="padrao" style="height: 39px; align-items: center; display: flex;">^</button>
+            <button class="padrao" style="height: 39px; align-items: center; display: flex;">v</button>
+        </div>
+        <button class="padrao">></button>
+    </div>
+</div>
+
+</body>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script>
+    
+document.onkeydown = Pega_Tecla;
+
+function Pega_Tecla(e) 
+{	
+    e = e || window.event;
+
+    tecla = e.keyCode;
+    console.log(tecla); // MOSTRA O CÓDIGO DA TECLA PRESSIONADA
+    
+}
+
+</script>
+
+</html>
